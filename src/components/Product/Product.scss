@@ -1,0 +1,118 @@
+.product {
+    width: 100%;
+    height: 290px;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    background-color: #f7f7f7;
+
+    &-img {
+        height: 100%;
+    }
+
+    &-share {
+        height: 36px;
+        width: 36px;
+        border-radius: 50%;
+        background-color: #fff;
+        position: absolute;
+        margin: 5px 15px;
+        right: 0;
+        background-size: 24px 24px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwAgMAAAAqbBEUAAAACXBIWXMAABYlAAAWJQFJUiTwAAAADFBMVEUAAAA3Pj43Pj43Pj6huE5uAAAAA3RSTlMAYJ//OyGsAAAAbUlEQVQoz8WNsQmAQAxFDxEsroiTeCu6gevY3QqO4AYGK0HIt1CTgDZX3W/C4/N+QvikGR3E1UE6HGRxCmBSBExKgEkZEFO2U6UO047lbYQ469xMPOhAT9zaV+LwBwATE1AE90BdsFMHnpRAcS72UYsluKPJnAAAAABJRU5ErkJggg==);
+    }
+}
+
+.product-raiting {
+    display: flex;
+    align-items: center;
+    margin-top: 0.2rem;
+
+    &-stars {
+        background-image: url(https://m.media-amazon.com/images/S/sash/ZNt8quAxIfEMMky.png);
+        background-size: 38rem 38rem;
+        background-repeat: no-repeat;
+        height: 1.5rem;
+        width: 6rem;
+        margin-right: 0.5rem;
+
+        & a {
+            font-size: 16px;
+        }
+    }
+
+    & p {
+        color: #0F1111;
+    }
+}
+
+.product-options {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+
+    &-li {
+        background: #f3f3f3;
+        height: 9px;
+        width: 9px;
+        border-radius: 50%;
+        border: 0.1rem solid #949494;
+        margin: 0 0.3rem;
+
+        &-active {
+            background: #949494;
+        }
+    }
+}
+
+.product-price {
+    color: #B12704;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.product-addcart {
+    width: 100%;
+    background-color: #ffd814;
+    color: #0F1111;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 18px;
+    line-height: 1.35;
+    font-family: inherit;
+    border: none;
+    margin: 20px 0 20px;
+    box-shadow: 0 0.2rem 0.5rem 0 #dddddd;
+
+}
+
+.product-addwishlist {
+    font-size: 15px;
+    line-height: 1.35;
+    margin-bottom: 10px;
+}
+
+.product-details {
+    margin-top: 0;
+
+    &-title {
+        font-size: 16px;
+        line-height: 1.4;
+        font-weight: 700;
+    }
+
+    &-info {
+        font-size: 18px;
+        line-height: 1.4;
+        color: #565959;
+        margin: 0 0 15px 0;
+    }
+
+    &-descriptions {
+        list-style-type: disc;
+        padding-left: 40px;
+        margin: 0;
+    }
+}

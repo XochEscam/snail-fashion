@@ -1,0 +1,65 @@
+.product-review {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+
+    &-user {
+        display: flex;
+        align-items: center;
+    }
+
+    &-avatar {
+        height: 34px;
+        width: 34px;
+        margin-right: 10px;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    &-verified {
+        color: #c45500 !important;
+        font-size: 12px;
+        line-height: 1.5;
+        font-weight: 700;
+    }
+
+    &-short {
+        color: #0F1111;
+        font-size: 16px;
+        line-height: 1.35;
+        font-weight: 700;
+    }
+
+    &-long {
+        font-size: 15px;
+        color: #0F1111;
+        line-height: 1.35;
+    }
+
+    &-actions {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+
+        &-btn {
+            background-color: #fff;
+            color: #0F1111;
+            font-size: 16px;
+            line-height: 1.35;
+            padding: 10px;
+            margin-right: 20px;
+            border-radius: 8px;
+            border: 1px solid #D5D9D9;
+            font-family: inherit;
+            box-shadow: 0 0.2rem 0.5rem 0 #dddddd;
+        }
+
+        &-report {
+            color: #565959;
+            font-size: 16px;
+            line-height: 1.35;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+header {
+    background-color: #232f3e;
+}
+
+.nav {
+    display: flex;
+    background-color: #232f3e;
+    justify-content: space-between;
+}
+
+.nav-main {
+    display: flex;
+
+    &-hb {
+        float: left;
+        padding: 14px 14px;
+    }
+
+    &-logo {
+        position: relative;
+        float: left;
+        z-index: 20;
+        margin-top: 13px;
+    }
+}
+
+.nav-user {
+    display: flex;
+
+    &-firstname {
+        display: block;
+        color: #fff;
+        line-height: 48px;
+        font-size: 13px;
+    }
+
+    &-avatar {
+        display: flex;
+        padding: 9px 0 12px 4px;
+        position: relative;
+        width: 39px;
+    }
+
+    &-shoppingcart {
+        display: flex;
+        padding: 10px 18px 11px 12px;
+    }
+
+    &-items {
+        justify-content: center;
+        display: flex;
+        font-size: 16px;
+        text-align: center;
+        padding: 2px 0 0 5px;
+        font-size: 15px;
+        line-height: 10px;
+        font-weight: 700;
+        text-decoration: none;
+        color: #f90;
+    }
+}
+
+
+.nav-search {
+    position: relative;
+    padding: 2px 10px;
+    background-color: #232f3e;
+    display: flex;
+
+    &-field {
+        width: 100%;
+    }
+
+    &-input {
+        border-radius: 8px;
+        border: 0;
+        height: 44px;
+        width: 100%;
+        padding-left: 10px;
+        font-size: 12px;
+        line-height: 1px;
+        font-family: inherit;
+    }
+
+    &-button {
+        border-radius: 8px;
+        background-color: #fcbb6a;
+        height: 46px;
+        width: 52px;
+        border: 0;
+        position: relative;
+    }
+}
+
+.nav-location {
+    background-color: #37475a;
+    color: #fff;
+    font-size: 13px;
+    padding: 12px 10px;
+    border: 0;
+    line-height: 20px;
+}
