@@ -1,3 +1,5 @@
+@import "../../../assets/css/Colors";
+
 .product-review {
     display: flex;
     flex-direction: column;
@@ -44,7 +46,7 @@
         margin: 20px 0;
 
         &-btn {
-            background-color: #fff;
+            background-color: $white-color;
             color: #0F1111;
             font-size: 16px;
             line-height: 1.35;

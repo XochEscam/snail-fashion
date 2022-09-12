@@ -1,21 +1,68 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Product.scss";
 import Review from "./Review/Review";
+import Modal from "./Modal/Modal";
+import Logo from "../../assets/img/logo.png";
 
 export default function Product() {
+  const [open, setOpen] = useState(false);
+
+  const assignClass = () => {
+    const body = document.querySelector("body");
+    body.style.overflow = open ? "hidden" : "scroll";
+
+    return open ? true : false;
+  };
+
+  const comments = {
+    0: {
+      id: 1,
+      name: "Cliente de Amazon",
+      short: "Excelente vestido",
+      long: "Recomendado ampliamente, excelente calidad, horma perfectamente la talla es justo lo que pedí.",
+      date: "13 de junio de 2022",
+    },
+    1: {
+      id: 2,
+      name: "Alejandra",
+      short: "Calidad regular, conforme al precio.",
+      long: "Pidan su talla habitual, pedí una G y me quedó grande, por seguir la tabla de medidas. No se arruga y no se transparenta, llegó en buen estado, la tela es un poco elástica y algo gruesa, no tiene forro. Se lo regalé a una persona de 78 años, muy bajita y se le veía genial.",
+      date: "21 de febrero de 2022",
+    },
+    2: {
+      id: 3,
+      name: "	LORENA SILVA MARTINEZ",
+      short: "Corriente",
+      long: "Producto terriblemente corriente.. ni le alcanzo a la empresa poner etiqueta de identificación.. me enviaron talla XS… la cual no siqiera estaba entre las tallas que da a opción de entrega… no tiene nada que ver con las recomendaciones",
+      date: "24 de julio de 2022",
+    },
+  };
+
   return (
     <div>
       <div className="container">
         <a>Marca: Verdusa</a>
-        <h1>
+        <h1 className="mb-10">
           Verdusa Elegante vestido corto plisado de manga corta con cinturón de
           cintura alta para mujer
         </h1>
-        <div className="product-raiting">
-          <i className="product-raiting-stars"></i>
-          <a href="">
-            <span>(352)</span>
-          </a>
+        <div className="d-flex">
+          <div className="product-raiting">
+            <i className="product-raiting-stars"></i>
+            <a href="">
+              <span>(352)</span>
+            </a>
+          </div>
+
+          <button
+            className="product-analize-btn"
+            type="button"
+            onClick={() => {
+              setOpen(!open);
+            }}>
+            <img src={Logo} alt="" />
+            Analizar
+          </button>
         </div>
       </div>
 
@@ -89,23 +136,24 @@ export default function Product() {
 
       <div className="container">
         <h2>Reseñas de clientes</h2>
-
         <div className="product-raiting mb-10">
           <i className="product-raiting-stars"></i>
           <p>4.8 de 5</p>
         </div>
-
         <p>
           <span>352</span> calificaciones globales
         </p>
-
         <hr />
-
         <h3>
           <b>Las mejores reseñas de México</b>
         </h3>
-        <Review />
+
+        {Object.values(comments).map((comment, index) => {
+          return <Review data={comment} key={index} />;
+        })}
       </div>
+
+      <Modal open={open} setOpen={setOpen} assignClass={assignClass} />
     </div>
   );
 }

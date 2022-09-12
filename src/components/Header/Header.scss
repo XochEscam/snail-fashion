@@ -1,10 +1,12 @@
+@import "../../assets/css/Colors";
+
 header {
-    background-color: #232f3e;
+    background-color: $primary-color;
 }
 
 .nav {
     display: flex;
-    background-color: #232f3e;
+    background-color: $primary-color;
     justify-content: space-between;
 }
 
@@ -29,7 +31,7 @@ header {
 
     &-firstname {
         display: block;
-        color: #fff;
+        color: $white-color;
         line-height: 48px;
         font-size: 13px;
     }
@@ -56,7 +58,7 @@ header {
         line-height: 10px;
         font-weight: 700;
         text-decoration: none;
-        color: #f90;
+        color: $accent-color;
     }
 }
 
@@ -86,6 +88,7 @@ header {
         border-radius: 8px;
         background-color: #fcbb6a;
         height: 46px;
+        padding: 2px;
         width: 52px;
         border: 0;
         position: relative;
@@ -93,8 +96,8 @@ header {
 }
 
 .nav-location {
-    background-color: #37475a;
-    color: #fff;
+    background-color: $secondary-color;
+    color: $white-color;
     font-size: 13px;
     padding: 12px 10px;
     border: 0;

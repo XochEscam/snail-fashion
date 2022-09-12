@@ -1,0 +1,152 @@
+@import "Sprites", "Colors";
+
+
+body {
+  padding: 0;
+  margin: 0;
+  background: $white-color;
+  color: #0F1111;
+  min-height: 100%;
+  font-family: "Amazon Ember";
+}
+
+p {
+  margin: 0px;
+  color: #565959;
+  font-size: 15px;
+  font-weight: 400;
+
+  & span {
+    font-size: 16px;
+  }
+}
+
+h1 {
+  font-size: 18px;
+  line-height: 1.25;
+  font-weight: 700;
+  margin: 0;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+hr {
+  margin: 20px 0;
+  border: 0px;
+  height: 0.4px;
+  background-color: #e7e7e7;
+}
+
+small {
+  color: #565959;
+  font-size: 13px;
+  line-height: 14px;
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #007185;
+  font-size: 13px;
+}
+
+.divider {
+  height: 6px;
+  background-color: #f3f3f3;
+}
+
+.container {
+  padding: 12px 14px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.snail-modal {
+  background: white;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+
+  &-hidden {
+    display: none;
+  }
+
+  &-show {
+    display: initial;
+  }
+
+  &-close {
+    height: 30px;
+    width: 30px;
+    border: 0;
+    display: flex;
+    padding: 65px 0 0 25px;
+  }
+
+  &-container {
+    padding: 30px 25px;
+  }
+
+  &-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: $black-color;
+    margin-bottom: 30px;
+  }
+
+  &-footer {
+    height: 120px;
+    width: 100%;
+    background-color: #63D0A959;
+    bottom: 0px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-chart {
+    width: 100%;
+
+    & img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  &-graphics {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

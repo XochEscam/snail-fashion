@@ -1,4 +1,4 @@
-import "./App.scss";
+import "./assets/css/App.scss";
 import Layout from "./components/Layout.js";
 import Product from "./components/Product/Product.js";
 

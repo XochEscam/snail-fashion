@@ -1,10 +1,10 @@
+@import "../../assets/css/Colors";
+
 footer {
     width: 100%;
     bottom: 0px;
-    background: #37475a;
-    color: #fff;
-
-
+    background: $secondary-color;
+    color: $white-color;
 }
 
 .footer-up {
@@ -12,7 +12,7 @@ footer {
     padding: 15px 0;
 
     &-text {
-        color: #fff;
+        color: $white-color;
         text-transform: uppercase;
         text-decoration: none;
         width: 100%;
@@ -22,9 +22,9 @@ footer {
 }
 
 .footer-options {
-    background: #232f3e;
+    background: $primary-color;
     display: flex;
-    color: #fff;
+    color: $white-color;
     width: 100%;
     padding: 0 20px;
 
